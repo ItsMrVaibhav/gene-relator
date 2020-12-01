@@ -2,6 +2,8 @@
 :root {
     --spaceCadet: #2b2d42ff;
     --manatee: #8d99aeff;
+    --white: #FFFFFF;
+    --black: #000000;
     --aliceBlue: #edf2f4ff;
     --imperialRed: #ef233cff;
     --amaranthRed: #d90429ff;
@@ -11,6 +13,126 @@
 * {
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
+}
+
+.Container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Classes and Ids */
+header {
+    height: 70px;
+    width: 100%;
+    background: var(--spaceCadet);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100000;
+    position: fixed;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.7);
+}
+
+.Header-Title {
+    font-family: "Fjalla One";
+    color: var(--manatee);
+    font-size: 35px;
+    text-decoration: none;
+    margin: 0px 25px;
+}
+
+.Navigation-Link {
+    font-family: "Poppins";
+    color: var(--white);
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.Navigation-Link:hover {
+    color: var(--imperialRed);
+}
+
+.Header-Space {
+    height: 45px; 
+}
+
+.Showcase {
+    width: 100%;
+    position: relative;
+}
+
+.Showcase-Image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(35%);
+    z-index: -100;
+}
+
+.Showcase-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0px;
+    max-width: 1500px;
+    text-align: center;
+}
+
+.Showcase-Heading
+{
+    font-family: "Fjalla One";
+    color: var(--imperialRed);
+    font-size: 60px;
+}
+
+.Showcase-Description
+{
+    padding-top: 25px;
+    font-family: "Roboto";
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+.Heading {
+    font-family: "Fjalla One";
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.Description, li {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.Image-Box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Content-Image {
+    margin: 25px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+section {
+    margin-top: 25px;
+}
+
+ul {
+    margin: 25px 0px;
+    margin-left: 20px;
+}
