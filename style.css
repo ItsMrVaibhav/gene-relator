@@ -1,0 +1,16 @@
+/* Color Palette */
+:root {
+    --spaceCadet: #2b2d42ff;
+    --manatee: #8d99aeff;
+    --aliceBlue: #edf2f4ff;
+    --imperialRed: #ef233cff;
+    --amaranthRed: #d90429ff;
+}
+
+/* Default */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Classes and Ids */
