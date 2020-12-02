@@ -9,6 +9,21 @@
     --amaranthRed: #d90429ff;
 }
 
+@font-face {
+    font-family: "Fjalla One";
+    src: url("/Fonts/FjallaOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/Fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Sofia Pro";
+    src: url("/Fonts/Sofia-Pro-Light.ttf");
+}
+
 /* Default */
 * {
     margin: 0px;
@@ -20,6 +35,10 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+
+body {
+    background: var(--aliceBlue);
 }
 
 /* Classes and Ids */
@@ -95,20 +114,21 @@ header {
 .Showcase-Description
 {
     padding-top: 25px;
-    font-family: "Roboto";
+    font-family: "Sofia Pro";
     color: #FFFFFF;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .Heading {
     font-family: "Fjalla One";
     font-size: 50px;
     margin-bottom: 25px;
+    color: var(--imperialRed);
 }
 
 .Description, li {
-    font-family: "Roboto";
-    font-size: 20px;
+    font-family: "Sofia Pro";
+    font-size: 21px;
     font-weight: 300;
 }
 
