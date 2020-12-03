@@ -1,3 +1,4 @@
+console.log(window.location.pathname.replace(/[^\\\/]*$/, ''));
 $(document).ready(function() {
     $(".Navigate").click(function(event) {
         event.preventDefault();
