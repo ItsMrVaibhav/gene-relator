@@ -1,0 +1,278 @@
+/* Color Palette */
+:root {
+    --spaceCadet: #2b2d42ff;
+    --manatee: #8d99aeff;
+    --white: #FFFFFF;
+    --black: #000000;
+    --aliceBlue: #edf2f4ff;
+    --imperialRed: #ef233cff;
+}
+
+@font-face {
+    font-family: "Fjalla One";
+    src: url("/Fonts/FjallaOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/Fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Sofia Pro";
+    src: url("/Fonts/Sofia-Pro-Light.ttf");
+}
+
+/* Default */
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    outline: none;
+    border: 0px;
+}
+
+.Container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background: var(--aliceBlue);
+}
+
+/* Classes and Ids */
+header {
+    height: 70px;
+    width: 100%;
+    background: var(--spaceCadet);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100000;
+    position: fixed;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.7);
+}
+
+.Header-Title {
+    font-family: "Fjalla One";
+    color: var(--manatee);
+    font-size: 35px;
+    text-decoration: none;
+    margin: 0px 25px;
+}
+
+.Header-Title:hover {
+    animation: Header-Title-Animation infinite 1.5s;
+}
+
+@keyframes Header-Title-Animation {
+    0% {
+        color: var(--manatee);
+    } 50% {
+        color: var(--imperialRed);
+    } 100% {
+        color: var(--manatee);
+    }
+}
+
+.Navigation-Link {
+    font-family: "Poppins";
+    color: var(--white);
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 25px;
+    transition: all 0.5s;
+}
+
+.Navigation-Link:hover {
+    color: var(--imperialRed);
+}
+
+.Header-Space {
+    height: 45px; 
+}
+
+.Showcase {
+    width: 100%;
+    position: relative;
+}
+
+.Showcase-Image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(35%);
+    z-index: -100;
+}
+
+.Showcase-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0px;
+    max-width: 1500px;
+    text-align: center;
+}
+
+.Showcase-Heading
+{
+    font-family: "Fjalla One";
+    color: var(--imperialRed);
+    font-size: 60px;
+}
+
+.Showcase-Description
+{
+    padding-top: 25px;
+    font-family: "Sofia Pro";
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.Download-Card {
+    width: 375px;
+    margin: auto;
+    background: var(--white);
+    padding: 15px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    border-radius: 35px;
+}
+
+.Download-Card:hover {
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.25);
+}
+
+.Download-Card-Image {
+    width: 75px;
+    margin-right: 25px;
+}
+
+.Download-Card-Link {
+    text-decoration: none;
+}
+
+.Download-Card-Text {
+    font-family: "Fjalla One";
+    font-size: 30px;
+    color: var(--imperialRed);
+}
+
+.Heading {
+    font-family: "Fjalla One";
+    font-size: 50px;
+    margin-bottom: 25px;
+    color: var(--imperialRed);
+}
+
+.Description, li {
+    font-family: "Sofia Pro";
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.Image-Box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Content-Image {
+    margin: 25px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+section {
+    margin-top: 25px;
+}
+
+ul {
+    margin: 25px 0px;
+    margin-left: 20px;
+}
+
+.Cards-Space {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    margin: 25px;
+    transition: all 0.5s;
+}
+
+.Card:hover {
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.25);
+}
+
+.Image-Space {
+    position: relative;
+    width: 180px;
+    height: 224px;
+    margin: 25px 0px 25px 25px;
+}
+
+.Card-Image {
+    position: absolute;
+    object-fit: cover;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.Card-Content {
+    width: 300px;
+    margin: 25px;
+}
+
+.Card-Name {
+    font-family: "Fjalla One";
+    font-size: 30px;
+    color: var(--imperialRed);
+}
+
+.Card-Description {
+    font-family: "Sofia Pro";
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.Card-Attribute {
+    font-weight: bold;
+}
+
+.Card-Link {
+    text-decoration: none;
+    color: var(--imperialRed);
+    transition: all 0.5s;
+}
+
+.Card-Link:hover {
+    color: var(--manatee);
+}
+
+.Usage {
+    margin-bottom: 25px;
+}
