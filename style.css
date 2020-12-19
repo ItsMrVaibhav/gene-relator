@@ -113,7 +113,7 @@ header {
     position: absolute;
     top: 0px;
     left: -300px;
-    width: 250px;
+    width: 200px;
     height: 100vh;
     display: flex;
     padding: 25px;
@@ -230,9 +230,18 @@ header {
     flex-wrap: wrap;
 }
 
-.Content-Image {
+.Image-Space {
+    max-width: 500px;
     margin: 25px;
-    max-width: 400px;
+}
+
+.Content-Image {
+    height: auto;
+    width: 100%;
+}
+
+.Image-Space:hover {
+    box-sizing: 0px 0px 10px 5px red;
 }
 
 li {
@@ -269,24 +278,8 @@ ul {
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.25);
 }
 
-.Image-Space {
-    position: relative;
-    width: 180px;
-    height: 224px;
-    margin: 25px 0px 25px 25px;
-}
-
-.Card-Image {
-    position: absolute;
-    object-fit: cover;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-}
-
 .Card-Content {
-    width: 300px;
+    max-width: 300px;
     margin: 25px;
 }
 
@@ -320,7 +313,7 @@ ul {
     margin-bottom: 25px;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1190px) {
     .Navigation-Link {
         display: none;
     }
@@ -334,12 +327,9 @@ ul {
     }
 }
 
-@media (max-width: 610px) {
-    .Card {
-        flex-direction: column;
-    }
 
-    .Image-Space {
-        margin: 25px;
+@media (max-width: 335px) {
+    .Showcase-Heading {
+        font-size: 50px;
     }
 }
