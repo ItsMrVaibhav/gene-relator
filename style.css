@@ -95,6 +95,48 @@ header {
     height: 45px; 
 }
 
+.Hamburger-Space {
+    display: none;
+}
+
+.Hamburger {
+    height: 40px;
+    margin: 0px 25px;
+    cursor: pointer;
+}
+
+.Hamburger:hover {
+    filter: brightness(0%) invert(100%);
+}
+
+.Navigation-Panel {
+    position: absolute;
+    top: 0px;
+    left: -300px;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    align-items: center;
+    background: var(--spaceCadet);
+    transition: all 0.5s;
+    display: none;
+}
+
+.Navigation-Panel-Link {
+    font-family: "Poppins";
+    color: var(--white);
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 25px;
+    transition: all 0.5s;
+}
+
+.Navigation-Panel-Link:hover {
+    color: var(--imperialRed);
+}
+
 .Showcase {
     width: 100%;
     position: relative;
@@ -136,7 +178,7 @@ header {
 }
 
 .Download-Card {
-    width: 375px;
+    max-width: 300px;
     margin: auto;
     background: var(--white);
     padding: 15px;
@@ -190,6 +232,7 @@ header {
 
 .Content-Image {
     margin: 25px;
+    max-width: 400px;
 }
 
 li {
@@ -275,4 +318,28 @@ ul {
 
 .Usage {
     margin-bottom: 25px;
+}
+
+@media (max-width: 1110px) {
+    .Navigation-Link {
+        display: none;
+    }
+
+    .Hamburger-Space {
+        display: block;
+    }
+
+    .Navigation-Panel {
+        display: flex;
+    }
+}
+
+@media (max-width: 610px) {
+    .Card {
+        flex-direction: column;
+    }
+
+    .Image-Space {
+        margin: 25px;
+    }
 }

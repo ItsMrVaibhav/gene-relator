@@ -1,4 +1,17 @@
 $(document).ready(function() {
+    let navigationPanelFlag = 0;
+    $(".Hamburger").click(function() {
+        let navigationPanel = document.querySelector(".Navigation-Panel");
+        
+        if (navigationPanelFlag === 0) {
+            navigationPanel.style.left = "0px";
+            navigationPanelFlag = 1;
+        } else if (navigationPanelFlag === 1) {
+            navigationPanel.style.left = "-300px";
+            navigationPanelFlag = 0;
+        }
+    });
+
     $(".Navigate").click(function(event) {
         event.preventDefault();
 
